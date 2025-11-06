@@ -1,0 +1,7 @@
+initial_balance:200
+final_balance:49314.04
+total_days_analyze:1mo
+total_days_to_analyze:1mo
+decimal_symbol:2
+symbol:GOLD
+timeframe:M6

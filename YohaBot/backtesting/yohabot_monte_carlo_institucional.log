@@ -1,0 +1,54 @@
+2025-11-06 01:02:45,381 - INFO - Buscando archivo: ../database/data_history\GOLD#_M6_MO_1.csv
+2025-11-06 01:02:45,381 - INFO - Cargando datos desde: ../database/data_history\GOLD#_M6_MO_1.csv
+2025-11-06 01:02:45,392 - INFO - Datos preparados exitosamente:
+2025-11-06 01:02:45,393 - INFO -   Periodo: 2025-10-01 08:48:00 a 2025-10-29 07:42:00
+2025-11-06 01:02:45,393 - INFO -   Observaciones: 4,600
+2025-11-06 01:02:45,394 - INFO -   Columnas: ['open', 'high', 'low', 'close', 'tick_volume', 'spread', 'real_volume']
+2025-11-06 01:02:45,395 - INFO -   Frecuencia estimada: 6min
+2025-11-06 01:02:45,398 - INFO - === INICIANDO ANALISIS INSTITUCIONAL YOHABOT ===
+2025-11-06 01:02:45,398 - INFO - FASE 1: Auditoria de Data Leakage
+2025-11-06 01:02:45,438 - INFO - Estrategia EMA completada: 734 senales (492 BUY, 242 SELL)
+2025-11-06 01:02:45,463 - INFO - Retornos calculados: 1 trades con costos XM reales
+2025-11-06 01:02:45,464 - INFO - Iniciando auditoria completa de data leakage...
+2025-11-06 01:02:45,514 - INFO - Auditoria completada. Score: 96.0/100
+2025-11-06 01:02:45,514 - INFO - FASE 2: Walk-Forward Analysis
+2025-11-06 01:02:45,514 - INFO - Iniciando analisis Walk-Forward institucional...
+2025-11-06 01:02:45,518 - INFO - Creadas 0 ventanas walk-forward
+2025-11-06 01:02:45,518 - INFO - Walk-Forward completado. Score estabilidad: 0.0
+2025-11-06 01:02:45,518 - INFO - FASE 3: Stress Testing
+2025-11-06 01:02:45,518 - INFO - Iniciando tests de estres institucionales...
+2025-11-06 01:02:45,518 - INFO - Ejecutando escenario: base
+2025-11-06 01:02:45,549 - INFO - Estrategia EMA completada: 734 senales (492 BUY, 242 SELL)
+2025-11-06 01:02:45,578 - INFO - Ejecutando escenario: high_cost
+2025-11-06 01:02:45,610 - INFO - Estrategia EMA completada: 734 senales (492 BUY, 242 SELL)
+2025-11-06 01:02:45,637 - INFO - Ejecutando escenario: extreme_cost
+2025-11-06 01:02:45,670 - INFO - Estrategia EMA completada: 734 senales (492 BUY, 242 SELL)
+2025-11-06 01:02:45,696 - INFO - Ejecutando escenario: low_liquidity
+2025-11-06 01:02:45,726 - INFO - Estrategia EMA completada: 734 senales (492 BUY, 242 SELL)
+2025-11-06 01:02:45,753 - INFO - Ejecutando escenario: crisis
+2025-11-06 01:02:45,784 - INFO - Estrategia EMA completada: 734 senales (492 BUY, 242 SELL)
+2025-11-06 01:02:45,820 - INFO - Estrategia EMA completada: 90 senales (35 BUY, 55 SELL)
+2025-11-06 01:02:45,932 - INFO - Estrategia EMA completada: 1165 senales (759 BUY, 406 SELL)
+2025-11-06 01:02:45,991 - INFO - Estrategia EMA completada: 734 senales (492 BUY, 242 SELL)
+2025-11-06 01:02:46,021 - INFO - Stress testing completado. Supervivencia: 85.7%
+2025-11-06 01:02:46,022 - INFO - FASE 4: Monte Carlo Bootstrap
+2025-11-06 01:02:46,022 - INFO - Iniciando Monte Carlo con 2000 simulaciones...
+2025-11-06 01:02:46,055 - INFO - Estrategia EMA completada: 734 senales (492 BUY, 242 SELL)
+2025-11-06 01:02:46,082 - INFO - Retornos calculados: 1 trades con costos XM reales
+2025-11-06 01:02:48,311 - INFO - Completadas 500/2000 simulaciones
+2025-11-06 01:02:50,433 - INFO - Completadas 1000/2000 simulaciones
+2025-11-06 01:02:52,934 - INFO - Completadas 1500/2000 simulaciones
+2025-11-06 01:02:55,422 - INFO - Completadas 2000/2000 simulaciones
+2025-11-06 01:02:55,432 - INFO - Monte Carlo bootstrap completado
+2025-11-06 01:02:55,433 - INFO - FASE 5: Out-of-Sample Validation
+2025-11-06 01:02:55,433 - INFO - Ejecutando validacion Out-of-Sample...
+2025-11-06 01:02:55,461 - INFO - Estrategia EMA completada: 557 senales (422 BUY, 135 SELL)
+2025-11-06 01:02:55,479 - INFO - Retornos calculados: 1 trades con costos XM reales
+2025-11-06 01:02:55,484 - INFO - Estrategia EMA completada: 52 senales (18 BUY, 34 SELL)
+2025-11-06 01:02:55,487 - INFO - Retornos calculados: 1 trades con costos XM reales
+2025-11-06 01:02:55,488 - INFO - OOS Validation: IS period 3450 obs, OOS period 451 obs
+2025-11-06 01:02:55,488 - INFO - FASE 6: Decision Go/No-Go
+2025-11-06 01:02:55,489 - INFO - Generando decision institucional...
+2025-11-06 01:02:55,489 - INFO - Decision final: NO_GO (Score: 56.2/100)
+2025-11-06 01:02:55,489 - INFO - === ANALISIS INSTITUCIONAL COMPLETADO ===
+2025-11-06 01:02:55,494 - INFO - Resultados guardados: results\yohabot_institutional_analysis_20251106_010255.json
